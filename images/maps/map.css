@@ -1,0 +1,426 @@
+html {
+    color: white;
+    background: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.window {
+    position: relative;
+    background: #e99d00;
+    border-style: solid;
+    border-color: #e99d00;
+    background-clip: content-box;
+    padding: 4px;
+    margin: 8px;
+}
+
+.tri {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    fill: #584f45;
+}
+
+.window>div {
+    padding: 8px 32px 32px;
+    flex-direction: column;
+}
+
+.window>div>h1 {
+    color: #5a5147;
+}
+
+h1,
+h2,
+th,
+#ranks td:first-child {
+    margin: 0;
+    font-size: xx-large;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.container {
+    display: flex;
+    background: black;
+    flex-direction: column;
+}
+
+.container>div {
+    display: flex;
+}
+
+.container_container {
+    display: flex;
+}
+
+/* RANKS */
+
+th {
+    min-width: 40px;
+    letter-spacing: 1px;
+}
+
+th,
+#ranks td:first-child {
+    font-size: x-large;
+    transform: skew(-10deg);
+    height: 40px;
+}
+
+#ranks td:first-child {
+    padding: 0 14px 0 12px;
+}
+
+.bronze {
+    background: #a76e1f;
+    border-color: #d89941;
+}
+
+.silver {
+    background: #7f7f7f;
+    border-color: #ebebeb;
+}
+
+.gold {
+    background: #f5bf37;
+    border-color: #cc8900;
+}
+
+.platinum {
+    background: #90ebff;
+    border-color: #90ebff;
+}
+
+.diamond {
+    background: #3db7d3;
+    border-color: #f3ffff;
+}
+
+.bronze,
+.silver,
+.gold,
+.platinum,
+.diamond {
+    border-style: dashed;
+    background-clip: content-box;
+    padding: 2px;
+    border-radius: 100%;
+}
+
+.master {
+    fill: #ff7e4f;
+}
+
+.grandmaster {
+    fill: #90ff4f;
+}
+
+.anomaly {
+    fill: #ff4ffd;
+}
+
+.improbability {
+    fill: #e99100;
+}
+
+.exploiter {
+    fill: #7e4fff;
+}
+
+.cheater {
+    fill: #ffd500;
+}
+
+.rank {
+    width: 32px;
+    height: 32px;
+    stroke: white;
+    stroke-width: 2px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.rank_high {
+    height: 42px;
+}
+
+.rank_high>.rank {
+    height: 40px;
+    width: 42px;
+}
+
+.rank>h1 {
+    margin-left: -2px;
+}
+
+tr {
+    background: #696356;
+}
+
+td>div {
+    vertical-align: center;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+
+/* LEVELS */
+
+#levels {
+    empty-cells: show;
+}
+
+#levels td {
+    min-width: 42px;
+    min-height: 42px;
+    height: 42px;
+}
+
+/* SANITY */
+
+#challenges tr:first-child th {
+    padding: 0 10px;
+    letter-spacing: -2px;
+    height: 44px;
+}
+
+#challenges th {
+    min-width: 42px;
+    height: 42px;
+}
+
+/* FEATURES */
+
+.features {
+    empty-cells: hide;
+    line-height: 16px;
+}
+
+.features td {
+    font-size: large;
+    font-weight: 900;
+    letter-spacing: -2px;
+    transform: none;
+    fill: #00b2ff;
+    width: 80px;
+    max-width: 80px;
+    padding: 8px 8px;
+    text-align: center;
+}
+
+.features td>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+}
+
+.features svg {
+    height: 16px;
+    min-width: 16px;
+    width: 16px;
+    margin-top: 2px;
+    margin-left: 4px;
+}
+
+.features span {
+    color: #ccc;
+    font-size: small;
+    visibility: collapse;
+}
+
+.features td .corruption_shard {
+    fill: red;
+}
+
+.features .content {
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+
+.features .content::before {
+    content: "X";
+    margin-right: 8px;
+}
+
+.flex {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.flex_grow {
+    display: flex;
+    flex-grow: 1;
+}
+
+.rel_right {
+    position: absolute;
+    right: 36px;
+}
+
+.rel_bottom {
+    position: absolute;
+    bottom: 36px;
+}
+
+.margin_left {
+    margin-left: 32px;
+}
+
+/* ITEMS */
+
+.items {
+    display: flex;
+    text-align: center;
+    line-height: 28px;
+    flex-wrap: wrap;
+}
+
+.items div {
+    width: 128px;
+    height: 128px;
+    text-shadow: 0 0 4px black, 0 0 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.items>div {
+    padding: 32px;
+}
+
+.skills {
+    background: #74766a;
+    border-radius: 100%;
+}
+
+.items .crystal {
+    position: absolute;
+    fill: #00b2ff;
+    width: 128px;
+    height: 128px;
+    z-index: -1;
+}
+
+.items .corruption_shard {
+    fill: red;
+}
+
+.currency {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e79b06;
+    border-radius: 100%;
+}
+
+.front {
+    z-index: 1;
+}
+
+.currency>.back {
+    border-radius: 100%;
+    width: 96px;
+    height: 96px;
+    background: #333;
+    text-shadow: none;
+    color: #e79b06;
+}
+
+.qblock>.back {
+    background: repeating-linear-gradient(-45deg, red, red 8px, #600 8px, #600 16px);
+    border-radius: 100%;
+}
+
+.q>.back {
+    background: #ffd700;
+    border-radius: 100%;
+}
+
+.q>.back>div,
+.qblock>.back>div {
+    font-size: 96px;
+    color: #333;
+    text-shadow: none;
+    margin-bottom: 8px;
+}
+
+.items .back {
+    display: flex;
+    position: absolute;
+}
+
+.currency>.back>div {
+    font-size: 96px;
+    margin-bottom: 5px;
+    margin-right: 2px;
+}
+
+.hypernode>.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='128' height='128'><path d='M0 16 L128 16 L64 124 Z'/></svg>");
+    background: radial-gradient(circle at 0 0, rgb(255 0 0 / 50%), transparent 70.71%),
+        radial-gradient(circle at 50% 100%, rgb(0 0 255 / 50%), transparent 70.71%),
+        radial-gradient(circle at 100% 0, rgb(255 255 0 / 50%), transparent 70.71%) beige;
+}
+
+.slot {
+    background-color: #848478;
+    box-shadow: inset 0 0 8px #000a, inset 0 0 8px #000a;
+}
+
+.slot.shop {
+    background-color: #e79b06;
+}
+
+.slot>.back {
+    margin-bottom: 9px;
+    font-size: 160px;
+    color: #333;
+}
+
+.slot.capacity>.back {
+    margin-bottom: 12px;
+    font-size: 128px;
+    color: #333;
+}
+
+.upgrade_point {
+    fill: #74766a;
+}
+
+.xp>.back>div {
+    font-size: 104px;
+    transform: skew(-10deg);
+    margin-bottom: 7px;
+    color: #777;
+}
+
+.items .shield {
+    width: 128px;
+    height: 128px;
+    fill: #777;
+}
+
+.items .reroll,
+.items .lock {
+    fill: #e79b06;
+}
+
+.items .recycling {
+    fill: #3a3;
+}
+
+.items .stats {
+    fill: #777;
+}

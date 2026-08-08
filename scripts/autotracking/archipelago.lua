@@ -6,6 +6,7 @@
 -- if you run into issues when touching A LOT of items/locations here, see the comment about Tracker.AllowDeferredLogicUpdate in autotracking.lua
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/option_mapping.lua")
 -- used for hint tracking to quickly map hint status to a value from the Highlight enum
 HINT_STATUS_MAPPING = {}
 if Highlight then
@@ -102,6 +103,10 @@ end
 -- apply everything needed from slot_data, called from onClear
 function apply_slot_data(slot_data)
 	-- put any code here that slot_data should affect (toggling setting items for example)
+	for k, v in pairs(OPTION_MAPPING) do
+		local value = slot_data[k]
+		Tracker:FindObjectForCode(v).AcquiredCount = value
+	end
 end
 
 -- called right after an AP slot is connected

@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Item Pool Efficiency: Crystals",
+        "type": "consumable",
+        "img": "images/items/crystals.png",
+        "codes": "itemPoolEfficiencyCrystals",
+        "max_quantity": 4,
+        "min_quantity": 1,
+        "initial_quantity": 2
+    },
+    {
+        "name": "Sanity: Number of Challenge Locations",
+        "type": "consumable",
+        "img": "images/items/challenges.png",
+        "codes": "sanityNumChallenges",
+        "max_quantity": 27,
+        "initial_quantity": 10
+    },
+    {
+        "name": "Sanity: Maximum Number of Tier 4 Challenge Locations",
+        "type": "consumable",
+        "img": "images/items/challenges.png",
+        "codes": "sanityNumChallengesTier4",
+        "max_quantity": 5,
+        "initial_quantity": 1
+    },
+    {
+        "name": "Item Pool: Total Number of Skills",
+        "type": "consumable",
+        "img": "images/items/skills.png",
+        "codes": "itemPoolTotalSkillNum",
+        "max_quantity": 50,
+        "min_quantity": 20,
+        "initial_quantity": 35
+    },
+    {
+        "name": "Item Pool: Minimum amount of Crystals included",
+        "type": "consumable",
+        "img": "images/items/crystals.png",
+        "codes": "itemPoolProgressiveCrystalsNum",
+        "max_quantity": 50,
+        "min_quantity": 20,
+        "initial_quantity": 35
+    }
+]

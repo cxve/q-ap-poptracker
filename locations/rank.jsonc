@@ -1,0 +1,612 @@
+[
+  {
+    "name": "Ranks",
+    "children": [
+      {
+        "name": "Bronze 2",
+        "access_rules": ["^$has_difficulty_requirements_rank|1"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 287,
+            "y": 129
+          }
+        ]
+      },{
+        "name": "Bronze 3",
+        "access_rules": ["^$has_difficulty_requirements_rank|2"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 333,
+            "y": 129
+          }
+        ]
+      },{
+        "name": "Bronze 4",
+        "access_rules": ["^$has_difficulty_requirements_rank|3"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 379,
+            "y": 129
+          }
+        ]
+      },{
+        "name": "Bronze 5",
+        "access_rules": ["^$has_difficulty_requirements_rank|4"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 425,
+            "y": 129
+          }
+        ]
+      },
+      {
+        "name": "Silver 1",
+        "access_rules": ["^$has_difficulty_requirements_rank|5"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 241,
+            "y": 175
+          }
+        ]
+      },{
+        "name": "Silver 2",
+        "access_rules": ["^$has_difficulty_requirements_rank|6"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 287,
+            "y": 175
+          }
+        ]
+      },{
+        "name": "Silver 3",
+        "access_rules": ["^$has_difficulty_requirements_rank|7"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 333,
+            "y": 175
+          }
+        ]
+      },{
+        "name": "Silver 4",
+        "access_rules": ["^$has_difficulty_requirements_rank|8"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 379,
+            "y": 175
+          }
+        ]
+      },{
+        "name": "Silver 5",
+        "access_rules": ["^$has_difficulty_requirements_rank|9"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 425,
+            "y": 175
+          }
+        ]
+      },
+      {
+        "name": "Gold 1",
+        "access_rules": ["^$has_difficulty_requirements_rank|10"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 241,
+            "y": 221
+          }
+        ]
+      },{
+        "name": "Gold 2",
+        "access_rules": ["^$has_difficulty_requirements_rank|11"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 287,
+            "y": 221
+          }
+        ]
+      },{
+        "name": "Gold 3",
+        "access_rules": ["^$has_difficulty_requirements_rank|12"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 333,
+            "y": 221
+          }
+        ]
+      },{
+        "name": "Gold 4",
+        "access_rules": ["^$has_difficulty_requirements_rank|13"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 379,
+            "y": 221
+          }
+        ]
+      },{
+        "name": "Gold 5",
+        "access_rules": ["^$has_difficulty_requirements_rank|14"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 425,
+            "y": 221
+          }
+        ]
+      },
+      {
+        "name": "Platinum 1",
+        "access_rules": ["^$has_difficulty_requirements_rank|15"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 241,
+            "y": 266
+          }
+        ]
+      },{
+        "name": "Platinum 2",
+        "access_rules": ["^$has_difficulty_requirements_rank|16"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 287,
+            "y": 266
+          }
+        ]
+      },{
+        "name": "Platinum 3",
+        "access_rules": ["^$has_difficulty_requirements_rank|17"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 333,
+            "y": 266
+          }
+        ]
+      },{
+        "name": "Platinum 4",
+        "access_rules": ["^$has_difficulty_requirements_rank|18"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 379,
+            "y": 266
+          }
+        ]
+      },{
+        "name": "Platinum 5",
+        "access_rules": ["^$has_difficulty_requirements_rank|19"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 425,
+            "y": 266
+          }
+        ]
+      },
+      {
+        "name": "Diamond 1",
+        "access_rules": ["^$has_difficulty_requirements_rank|20"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 241,
+            "y": 312
+          }
+        ]
+      },{
+        "name": "Diamond 2",
+        "access_rules": ["^$has_difficulty_requirements_rank|21"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 287,
+            "y": 312
+          }
+        ]
+      },{
+        "name": "Diamond 3",
+        "access_rules": ["^$has_difficulty_requirements_rank|22"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 333,
+            "y": 312
+          }
+        ]
+      },{
+        "name": "Diamond 4",
+        "access_rules": ["^$has_difficulty_requirements_rank|23"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 379,
+            "y": 312
+          }
+        ]
+      },{
+        "name": "Diamond 5",
+        "access_rules": ["^$has_difficulty_requirements_rank|24"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 425,
+            "y": 312
+          }
+        ]
+      },
+      {
+        "name": "Master 1",
+        "access_rules": ["^$has_difficulty_requirements_rank|25"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 241,
+            "y": 357
+          }
+        ]
+      },{
+        "name": "Master 2",
+        "access_rules": ["^$has_difficulty_requirements_rank|26"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 287,
+            "y": 357
+          }
+        ]
+      },{
+        "name": "Master 3",
+        "access_rules": ["^$has_difficulty_requirements_rank|27"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 333,
+            "y": 357
+          }
+        ]
+      },{
+        "name": "Master 4",
+        "access_rules": ["^$has_difficulty_requirements_rank|28"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 379,
+            "y": 357
+          }
+        ]
+      },{
+        "name": "Master 5",
+        "access_rules": ["^$has_difficulty_requirements_rank|29"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 425,
+            "y": 357
+          }
+        ]
+      },
+      {
+        "name": "Grandmaster 1",
+        "access_rules": ["^$has_difficulty_requirements_rank|30"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 241,
+            "y": 403
+          }
+        ]
+      },{
+        "name": "Grandmaster 2",
+        "access_rules": ["^$has_difficulty_requirements_rank|31"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 287,
+            "y": 403
+          }
+        ]
+      },{
+        "name": "Grandmaster 3",
+        "access_rules": ["^$has_difficulty_requirements_rank|32"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 333,
+            "y": 403
+          }
+        ]
+      },{
+        "name": "Grandmaster 4",
+        "access_rules": ["^$has_difficulty_requirements_rank|33"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 379,
+            "y": 403
+          }
+        ]
+      },{
+        "name": "Grandmaster 5",
+        "access_rules": ["^$has_difficulty_requirements_rank|34"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 425,
+            "y": 403
+          }
+        ]
+      },
+      {
+        "name": "Anomaly 1",
+        "access_rules": ["^$has_difficulty_requirements_rank|35"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 241,
+            "y": 449
+          }
+        ]
+      },{
+        "name": "Anomaly 2",
+        "access_rules": ["^$has_difficulty_requirements_rank|36"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 287,
+            "y": 449
+          }
+        ]
+      },{
+        "name": "Anomaly 3",
+        "access_rules": ["^$has_difficulty_requirements_rank|37"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 333,
+            "y": 449
+          }
+        ]
+      },{
+        "name": "Anomaly 4",
+        "access_rules": ["^$has_difficulty_requirements_rank|38"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 379,
+            "y": 449
+          }
+        ]
+      },{
+        "name": "Anomaly 5",
+        "access_rules": ["^$has_difficulty_requirements_rank|39"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 425,
+            "y": 449
+          }
+        ]
+      },
+      {
+        "name": "Improbability 1",
+        "access_rules": ["^$has_difficulty_requirements_rank|40"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 241,
+            "y": 495
+          }
+        ]
+      },{
+        "name": "Improbability 2",
+        "access_rules": ["^$has_difficulty_requirements_rank|41"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 287,
+            "y": 495
+          }
+        ]
+      },{
+        "name": "Improbability 3",
+        "access_rules": ["^$has_difficulty_requirements_rank|42"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 333,
+            "y": 495
+          }
+        ]
+      },{
+        "name": "Improbability 4",
+        "access_rules": ["^$has_difficulty_requirements_rank|43"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 379,
+            "y": 495
+          }
+        ]
+      },{
+        "name": "Improbability 5",
+        "access_rules": ["^$has_difficulty_requirements_rank|44"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 425,
+            "y": 495
+          }
+        ]
+      },
+      {
+        "name": "Exploiter 1",
+        "access_rules": ["^$has_difficulty_requirements_rank|45"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 241,
+            "y": 541
+          }
+        ]
+      },{
+        "name": "Exploiter 2",
+        "access_rules": ["^$has_difficulty_requirements_rank|46"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 287,
+            "y": 541
+          }
+        ]
+      },{
+        "name": "Exploiter 3",
+        "access_rules": ["^$has_difficulty_requirements_rank|47"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 333,
+            "y": 541
+          }
+        ]
+      },{
+        "name": "Exploiter 4",
+        "access_rules": ["^$has_difficulty_requirements_rank|48"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 379,
+            "y": 541
+          }
+        ]
+      },{
+        "name": "Exploiter 5",
+        "access_rules": ["^$has_difficulty_requirements_rank|49"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 425,
+            "y": 541
+          }
+        ]
+      },
+      {
+        "name": "CHEATER 1",
+        "access_rules": ["^$has_difficulty_requirements_rank|50"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 241,
+            "y": 587
+          }
+        ]
+      },{
+        "name": "CHEATER 2",
+        "access_rules": ["^$has_difficulty_requirements_rank|51"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 287,
+            "y": 587
+          }
+        ]
+      },{
+        "name": "CHEATER 3",
+        "access_rules": ["^$has_difficulty_requirements_rank|52"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 333,
+            "y": 587
+          }
+        ]
+      },{
+        "name": "CHEATER 4",
+        "access_rules": ["^$has_difficulty_requirements_rank|53"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 379,
+            "y": 587
+          }
+        ]
+      },{
+        "name": "CHEATER 5",
+        "access_rules": ["^$has_difficulty_requirements_rank|54"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 425,
+            "y": 587
+          }
+        ]
+      }
+    ]
+  }
+]

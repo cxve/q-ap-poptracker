@@ -1,30 +1,148 @@
 {
-  // sets layouts for shadred items grids
-  // bigger example: https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/layouts/items.json
-  "shared_item_grid": {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "0,0",
+  "item_progression": {
+    "type": "group",
+    "header": "Progression Items",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "0, 0",
+            "item_size": "96, 96",
+            "h_alignment": "left",
+            "margin": "0, 0",
+            "rows": [
+              [
+                "skill",
+                "item_shop",
+                "crystals"
+              ],
+              [
+                "progressive_challenges",
+                "progressive_challenge_slot",
+                "progressive_qblock_breaker"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "item_useful": {
+    "type": "group",
+    "header": "Useful Items",
     "content": [
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "0,0",
         "content": [
           {
             "type": "itemgrid",
-            "item_margin": "10, 10",
+            "item_margin": "0, 0",
+            "item_size": "96, 96",
             "h_alignment": "left",
+            "margin": "0, 0",
             "rows": [
               [
-                "toggle",
-                "progressive"
+                "progressive_item_recycling_system",
+                "progressive_item_slot",
+                "progressive_shard_slot_capacity"
               ],
               [
-                "consumable",
-                "progressive_toggle"
+                "progressive_wallet_size",
+                "progressive_shop_reroll",
+                "shop_lock"
+              ],
+              [
+                "upgrade_points",
+                "hypernode",
+                "honor_duels"
               ]
             ]
+          }
+        ]
+      }
+    ]
+  },
+  "item_filler": {
+    "type": "group",
+    "header": "Filler Items",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0, 0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "0, 0",
+            "item_size": "96, 96",
+            "h_alignment": "left",
+            "margin": "0, 0",
+            "rows": [
+              [
+                "corruption_shards",
+                "progressive_shop_slot",
+                "trickle_down"
+              ],
+              [
+                "progressive_stats",
+                "loadouts",
+                "knowledge_transfer"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  // sets layouts for shadred items grids
+  // bigger example: https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/layouts/items.json
+  "item_grid_vertical": {
+    "type": "container",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0, 0",
+        "background": "#444",
+        "content": [
+          {
+            "type": "layout",
+            "key": "item_progression"
+          },{
+            "type": "layout",
+            "key": "item_useful"
+          },{
+            "type": "layout",
+            "key": "item_filler"
+          }
+        ]
+      }
+    ]
+  },
+  "item_grid_horizontal": {
+    "type": "container",
+    "h_alignment": "center",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0, 0",
+        "background": "#444",
+        "h_alignment": "center",
+        "content": [
+          {
+            "type": "layout",
+            "key": "item_progression"
+          },{
+            "type": "layout",
+            "key": "item_useful"
+          },{
+            "type": "layout",
+            "key": "item_filler"
           }
         ]
       }

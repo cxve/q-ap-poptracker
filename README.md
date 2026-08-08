@@ -1,20 +1,7 @@
-# Template Pack for PopTracker
+# Q-AP Pack for PopTracker
 
-This a template tracker package for PopTracker.
-
-Includes examples for AP and SNES memory autotracking and beginner-friendly explanations in the pack.
+Supports AP autotracking for the Q-AP mod. Tracks all relevant items and all locations, does not track individual skills or hypernodes. Currently cannot track the options "Total Number of Skills" and "Minimum amount of Crystals", these options have to be adjusted manually in the pack settings if they are *below* the default value of 35.
 
 ## Installation
 
-Just download the latest build or source and put in your packs folder (unpacked).
-
-## More Info
-
-Check out PopTrackers Documentation on
-packs [here](https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md).
-
-Still having trouble realizing your pack and looking for help or just want more information about everything PopTracker? Check out the ['Unofficial' PopTracker Discord Server](https://discord.com/invite/gwThqMCPgK)!
-
-## License
-
-Feel free to use this template without credit for all your PopTracker packs!
+Just download the [latest build or source](<https://github.com/cxve/q-ap-poptracker/releases>) and put in your packs folder (unpacked).

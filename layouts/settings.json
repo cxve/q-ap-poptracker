@@ -1,0 +1,52 @@
+{
+    "settings_popup": {
+        "type": "dock",
+        "background": "#222",
+        "content": [
+            {
+                "type": "group",
+                "dock": "top",
+                "header": "These options will be automatically updated after connecting to AP",
+                "content": [
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "content": [
+                            {
+                                "type": "item",
+                                "item": "itemPoolEfficiencyCrystals"
+                            },
+                            {
+                                "type": "item",
+                                "item": "sanityNumChallenges"
+                            },
+                            {
+                                "type": "item",
+                                "item": "sanityNumChallengesTier4"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "group",
+                "dock": "top",
+                "header": "These options currently do not support autotracking, please adjust them manually!",
+                "content": [{
+                    "type": "array",
+                    "orientation": "horizontal",
+
+                    "content": [{
+                        "type": "item",
+                        "item": "itemPoolTotalSkillNum"
+                    },
+                    {
+                        "type": "item",
+                        "item": "itemPoolProgressiveCrystalsNum",
+                        "max_width": 192
+                    }]
+                }]
+            }
+        ]
+    }
+}

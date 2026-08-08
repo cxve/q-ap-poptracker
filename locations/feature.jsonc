@@ -1,0 +1,569 @@
+[
+  {
+    "name": "Features",
+    "children": [
+      {
+        "name": "GAME_STORE",
+        "access_rules": ["[$has_crystals|0]"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 415,
+            "y": 745
+          }
+        ]
+      },
+      {
+        "name": "ITEM_SHOP",
+        "access_rules": ["@Features/GAME_STORE/,[$has_crystals|0]"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 317,
+            "y": 779
+          }
+        ]
+      },
+      {
+        "name": "ADDITIONAL_SHOP_SLOT_1",
+        "access_rules": [
+          "@Features/ITEM_SHOP/,$has_crystals|2,^$has_difficulty_requirements_rank|5"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 165,
+            "y": 813
+          }
+        ]
+      },
+      {
+        "name": "ADDITIONAL_SHOP_SLOT_2",
+        "access_rules": ["@Features/ADDITIONAL_SHOP_SLOT_1/,$has_crystals|3"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 111,
+            "y": 847
+          }
+        ]
+      },
+      {
+        "name": "ADDITIONAL_SHOP_SLOT_3",
+        "access_rules": ["@Features/ADDITIONAL_SHOP_SLOT_2/,$has_crystals|4"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 111,
+            "y": 881
+          }
+        ]
+      },
+      {
+        "name": "SHOP_REROLL",
+        "access_rules": ["@Features/ADDITIONAL_SHOP_SLOT_3/,$has_crystals|5"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 62,
+            "y": 915
+          }
+        ]
+      },
+      {
+        "name": "EXTREMELY_COOL_SHOPS_SOMETIMES",
+        "access_rules": [
+          "@Features/SHOP_REROLL/,$has_crystals|6,^$has_difficulty_requirements_rank|35"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 72,
+            "y": 949
+          }
+        ]
+      },
+      {
+        "name": "MORE_BETTERED_CHALLENGES",
+        "access_rules": [
+          "@Features/EXTREMELY_COOL_SHOPS_SOMETIMES/,$has_crystals|7"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 72,
+            "y": 983
+          }
+        ]
+      },
+      {
+        "name": "ADDITIONAL_SHOP_SLOT_4",
+        "access_rules": ["@Features/ADDITIONAL_SHOP_SLOT_3/,$has_crystals|5"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 160,
+            "y": 915
+          }
+        ]
+      },
+      {
+        "name": "ADDITIONAL_SHOP_SLOT_5",
+        "access_rules": ["@Features/ADDITIONAL_SHOP_SLOT_4/,$has_crystals|6"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 160,
+            "y": 949
+          }
+        ]
+      },
+      {
+        "name": "SHOP_LOCK",
+        "access_rules": ["@Features/ADDITIONAL_SHOP_SLOT_1/,$has_crystals|3"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 263,
+            "y": 847
+          }
+        ]
+      },
+      {
+        "name": "ADDITIONAL_ITEM_SLOT_1",
+        "access_rules": [
+          "@Features/ITEM_SHOP/,$has_crystals|2,^$has_difficulty_requirements_rank|5"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 361,
+            "y": 813
+          }
+        ]
+      },
+      {
+        "name": "ADDITIONAL_ITEM_SLOT_2",
+        "access_rules": ["@Features/ADDITIONAL_ITEM_SLOT_1/,$has_crystals|3"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 356,
+            "y": 847
+          }
+        ]
+      },
+      {
+        "name": "ADDITIONAL_ITEM_SLOT_3",
+        "access_rules": ["@Features/ADDITIONAL_ITEM_SLOT_2/,$has_crystals|4"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 356,
+            "y": 881
+          }
+        ]
+      },
+      {
+        "name": "ADDITIONAL_ITEM_SLOT_4",
+        "access_rules": ["@Features/ADDITIONAL_ITEM_SLOT_3/,$has_crystals|5"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 351,
+            "y": 915
+          }
+        ]
+      },
+      {
+        "name": "ITEM_RECYCLING_SYSTEM",
+        "access_rules": ["@Features/ITEM_SHOP/,[$has_crystals|1]"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 464,
+            "y": 813
+          }
+        ]
+      },
+      {
+        "name": "ENHANCED_ITEM_RECYCLING__SORTING",
+        "access_rules": [
+          "@Features/ITEM_RECYCLING_SYSTEM/,$has_crystals|1,[$has_crystals|3]"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 459,
+            "y": 847
+          }
+        ]
+      },
+      {
+        "name": "INCREASED_SHARD_SLOT_CAPACITY",
+        "access_rules": [
+          "@Features/ITEM_SHOP/,$has_crystals|2,^$has_difficulty_requirements_rank|10"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 552,
+            "y": 813
+          }
+        ]
+      },
+      {
+        "name": "MAXIMUM_SHARD_SLOT_CAPACITY",
+        "access_rules": [
+          "@Features/INCREASED_SHARD_SLOT_CAPACITY/,$has_crystals|3"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 552,
+            "y": 847
+          }
+        ]
+      },
+      {
+        "name": "INCREASED_WALLET_SIZE",
+        "access_rules": [
+          "@Features/GAME_STORE/,[$has_crystals|1],$has_crystals|0"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 655,
+            "y": 779
+          }
+        ]
+      },
+      {
+        "name": "EVEN_BIGGER_WALLET",
+        "access_rules": ["@Features/INCREASED_WALLET_SIZE/,$has_crystals|2"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 655,
+            "y": 813
+          }
+        ]
+      },
+      {
+        "name": "JUMBO_WALLET",
+        "access_rules": ["@Features/EVEN_BIGGER_WALLET/,$has_crystals|3"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 650,
+            "y": 847
+          }
+        ]
+      },
+      {
+        "name": "FULLBODY_WALLET_SUIT",
+        "access_rules": ["@Features/JUMBO_WALLET/,$has_crystals|4"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 650,
+            "y": 881
+          }
+        ]
+      },
+      {
+        "name": "WORLDS_BIGGEST_WALLET",
+        "access_rules": ["@Features/FULLBODY_WALLET_SUIT/,$has_crystals|5"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 650,
+            "y": 915
+          }
+        ]
+      },
+      {
+        "name": "TRICKLE_DOWN_",
+        "access_rules": ["@Features/WORLDS_BIGGEST_WALLET/,$has_crystals|6"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 650,
+            "y": 949
+          }
+        ]
+      },
+      {
+        "name": "CHALLENGES",
+        "access_rules": [
+          "@Features/GAME_STORE/,^$has_difficulty_requirements_rank|10,[$has_crystals|1],$has_crystals|0"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 753,
+            "y": 779
+          }
+        ]
+      },
+      {
+        "name": "ADDITIONAL_CHALLENGE_SLOT_1",
+        "access_rules": [
+          "@Features/CHALLENGES/,^$has_difficulty_requirements_rank|25,$has_crystals|2"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 748,
+            "y": 813
+          }
+        ]
+      },
+      {
+        "name": "ADDITIONAL_CHALLENGE_SLOT_2",
+        "access_rules": [
+          "@Features/ADDITIONAL_CHALLENGE_SLOT_1/,$has_crystals|3"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 748,
+            "y": 847
+          }
+        ]
+      },
+      {
+        "name": "STATS_",
+        "access_rules": ["^$has_difficulty_requirements_rank|5"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 889,
+            "y": 745
+          }
+        ]
+      },
+      {
+        "name": "STATS_CHARTS",
+        "access_rules": [
+          "@Features/STATS_/,^$has_difficulty_requirements_rank|9"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 889,
+            "y": 779
+          }
+        ]
+      },
+      {
+        "name": "NEW_BUSINESS_MODEL",
+        "access_rules": [
+          "@Features/STATS_CHARTS/,^$has_difficulty_requirements_rank|10"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 882,
+            "y": 882
+          }
+        ]
+      },
+      {
+        "name": "TURBO_SPEED",
+        "access_rules": [
+          "@Features/NEW_BUSINESS_MODEL/,^$has_difficulty_requirements_rank|20"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 884,
+            "y": 949
+          }
+        ]
+      },
+      {
+        "name": "LOADOUTS",
+        "access_rules": ["@Features/TURBO_SPEED/"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 884,
+            "y": 915
+          }
+        ]
+      },
+      {
+        "name": "HONOR_DUELS",
+        "access_rules": [
+          "@Features/TURBO_SPEED/,^$has_difficulty_requirements_rank|25"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 884,
+            "y": 983
+          }
+        ]
+      },
+      {
+        "name": "KNOWLEDGE_TRANSFER",
+        "access_rules": [
+          "@Features/HONOR_DUELS/,^$has_difficulty_requirements_rank|40"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 879,
+            "y": 1018
+          }
+        ]
+      },
+      {
+        "name": "QBLOCK_BREAKER_1",
+        "access_rules": [
+          "^$has_difficulty_requirements_rank|35"
+        ],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 987,
+            "y": 745
+          }
+        ]
+      },
+      {
+        "name": "QBLOCK_BREAKER_2",
+        "access_rules": ["@Features/QBLOCK_BREAKER_1/"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 987,
+            "y": 779
+          }
+        ]
+      },
+      {
+        "name": "QBLOCK_BREAKER_3",
+        "access_rules": ["@Features/QBLOCK_BREAKER_1/"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 982,
+            "y": 813
+          }
+        ]
+      },
+      {
+        "name": "QBLOCK_BREAKER_4",
+        "access_rules": ["@Features/QBLOCK_BREAKER_1/"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 982,
+            "y": 847
+          }
+        ]
+      },
+      {
+        "name": "QBLOCK_BREAKER_5",
+        "access_rules": ["@Features/QBLOCK_BREAKER_1/"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 982,
+            "y": 881
+          }
+        ]
+      },
+      {
+        "name": "QBLOCK_BREAKER_6",
+        "access_rules": ["@Features/QBLOCK_BREAKER_1/"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 982,
+            "y": 915
+          }
+        ]
+      },
+      {
+        "name": "QBLOCK_BREAKER_7",
+        "access_rules": ["@Features/QBLOCK_BREAKER_1/"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 982,
+            "y": 949
+          }
+        ]
+      },
+      {
+        "name": "QBLOCK_BREAKER_8",
+        "access_rules": ["@Features/QBLOCK_BREAKER_1/"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 982,
+            "y": 983
+          }
+        ]
+      },
+      {
+        "name": "QBLOCK_BREAKER_9",
+        "access_rules": ["@Features/QBLOCK_BREAKER_1/"],
+        "sections": [{}],
+        "map_locations": [
+          {
+            "map": "full",
+            "x": 982,
+            "y": 1017
+          }
+        ]
+      }
+    ]
+  }
+]

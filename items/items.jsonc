@@ -1,56 +1,139 @@
 [
   //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#items
   {
-    "name": "Toggle",
+    "name": "ITEM_SHOP",
     "type": "toggle",
-    "img": "images/items/toggle.png",
-    "codes": "toggle"
+    "img": "images/items/item_shop.png",
+    "codes": "item_shop"
   },
   {
-    "name": "Progressive",
-    "type": "progressive",
-    "allow_disabled": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/items/progressive.png",
-        "codes": "progressive",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/items/progressive_2.png",
-        "codes": "progressive_2",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Consumable",
+    "name": "Skills",
     "type": "consumable",
-    "img": "images/items/consumable.png",
-    "max_quantity": 8,
-    "increment": 1,
-    "decrement": 1,
-    "initial_quantity": 1,
-    "overlay_background": "#000000",
-    "overlay_font_size": 8,
-    "codes": "consumable"
+    "img": "images/items/skills.png",
+    "codes": "skill"
   },
   {
-    "name": "Progressive Toggle",
-    "type": "progressive_toggle",
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/items/progressive.png",
-        "codes": "progressive_toggle",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/items/progressive_2.png",
-        "codes": "progressive_toggle_2",
-        "inherit_codes": false
-      }
-    ]
+    "name": "Crystals",
+    "type": "consumable",
+    "img": "images/items/crystals.png",
+    "codes": "crystals"
+  },
+  {
+    "name": "PROGRESSIVE_CHALLENGES",
+    "type": "consumable",
+    "img": "images/items/challenges.png",
+    "codes": "progressive_challenges",
+    "max_quantity": 2
+  },
+  {
+    "name": "PROGRESSIVE_CHALLENGE_SLOT",
+    "type": "consumable",
+    "img": "images/items/challenge_slots.png",
+    "codes": "progressive_challenge_slot",
+    "max_quantity": 2
+  },
+  {
+    "name": "PROGRESSIVE_QBLOCK_BREAKER",
+    "type": "consumable",
+    "img": "images/items/qblock_breaker.png",
+    "codes": "progressive_qblock_breaker",
+    "max_quantity": 9
+  },
+  {
+    "name": "Upgrade Points",
+    "type": "consumable",
+    "img": "images/items/upgrade_points.png",
+    "codes": "upgrade_points",
+    "max_quantity": 50
+  },
+  {
+    "name": "PROGRESSIVE_WALLET_SIZE",
+    "type": "consumable",
+    "img": "images/items/wallet_size.png",
+    "codes": "progressive_wallet_size",
+    "max_quantity": 5
+  },
+  {
+    "name": "PROGRESSIVE_ITEM_RECYCLING_SYSTEM",
+    "type": "consumable",
+    "img": "images/items/item_recycling.png",
+    "codes": "progressive_item_recycling_system",
+    "max_quantity": 2
+  },
+  {
+    "name": "PROGRESSIVE_ITEM_SLOT",
+    "type": "consumable",
+    "img": "images/items/item_slots.png",
+    "codes": "progressive_item_slot",
+    "max_quantity": 4
+  },
+  {
+    "name": "PROGRESSIVE_SHARD_SLOT_CAPACITY",
+    "type": "consumable",
+    "img": "images/items/shard_capacity.png",
+    "codes": "progressive_shard_slot_capacity",
+    "max_quantity": 2
+  },
+  {
+    "name": "HONOR_DUELS",
+    "type": "toggle",
+    "img": "images/items/honor_duels.png",
+    "codes": "honor_duels"
+  },
+  {
+    "name": "SHOP_LOCK",
+    "type": "toggle",
+    "img": "images/items/shop_lock.png",
+    "codes": "shop_lock"
+  },
+  {
+    "name": "PROGRESSIVE_SHOP_REROLL",
+    "type": "consumable",
+    "img": "images/items/shop_reroll.png",
+    "codes": "progressive_shop_reroll",
+    "max_quantity": 2
+  },{
+    "name": "Corruption Shards",
+    "type": "consumable",
+    "img": "images/items/corruption_shards.png",
+    "codes": "corruption_shards"
+  },{
+    "name": "PROGRESSIVE_SHOP_SLOT",
+    "type": "consumable",
+    "img": "images/items/shop_slots.png",
+    "codes": "progressive_shop_slot",
+    "max_quantity": 5
+  },
+  {
+    "name": "TRICKLE_DOWN_",
+    "type": "toggle",
+    "img": "images/items/trickle_down.png",
+    "codes": "trickle_down"
+  },
+  {
+    "name": "KNOWLEDGE_TRANSFER",
+    "type": "toggle",
+    "img": "images/items/knowledge_transfer.png",
+    "codes": "knowledge_transfer"
+  },
+  {
+    "name": "PROGRESSIVE_STATS",
+    "type": "consumable",
+    "img": "images/items/stats.png",
+    "codes": "progressive_stats",
+    "max_quantity": 3
+  },
+  {
+    "name": "LOADOUTS",
+    "type": "toggle",
+    "img": "images/items/loadouts.png",
+    "codes": "loadouts"
+  },
+  {
+    "name": "Hypernodes",
+    "type": "consumable",
+    "img": "images/items/hypernodes.png",
+    "codes": "hypernode",
+    "max_quantity": 8
   }
 ]
