@@ -17,15 +17,15 @@ for i=0,279,1 do
 	ITEM_MAPPING[BASE_ITEM_ID + i] = {{ "skill", "consumable" }}
 end
 
-for i=280,287,1 do
-	ITEM_MAPPING[BASE_ITEM_ID + i] = {{ "hypernode", "consumable" }}
+for i=0,7,1 do
+	ITEM_MAPPING[BASE_ITEM_ID + 1100 + i] = {{ "hypernode", "consumable" }}
 end
 
-ITEM_MAPPING[BASE_ITEM_ID + 288] = {{ "gold", "consumable" }}
-ITEM_MAPPING[BASE_ITEM_ID + 289] = {{ "corruption_shards", "consumable" }}
-ITEM_MAPPING[BASE_ITEM_ID + 290] = {{ "crystals", "consumable" }}
-ITEM_MAPPING[BASE_ITEM_ID + 291] = {{ "upgrade_points", "consumable" }}
-ITEM_MAPPING[BASE_ITEM_ID + 292] = {{ "crystals", "consumable" }}
+ITEM_MAPPING[BASE_ITEM_ID + 1200] = {{ "upgrade_points", "consumable" }}
+ITEM_MAPPING[BASE_ITEM_ID + 1201] = {{ "crystals", "consumable" }}
+ITEM_MAPPING[BASE_ITEM_ID + 1202] = {{ "corruption_shards", "consumable" }}
+ITEM_MAPPING[BASE_ITEM_ID + 1203] = {{ "gold", "consumable" }}
+ITEM_MAPPING[BASE_ITEM_ID + 1204] = {{ "random gear", "consumable" }}
 
 local features = {
  { "game_store", "toggle" },
@@ -49,5 +49,5 @@ local features = {
 }
 
 for i, item in ipairs(features) do
-	ITEM_MAPPING[BASE_ITEM_ID + 292 + i] = {item}
+	ITEM_MAPPING[BASE_ITEM_ID + 999 + i] = {item}
 end
