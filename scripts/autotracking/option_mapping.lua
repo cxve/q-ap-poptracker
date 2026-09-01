@@ -1,5 +1,7 @@
 OPTION_MAPPING = {
+    ["itemPoolCrystalNum"] = "itemPoolCrystalNum",
     ["itemPoolEfficiencyCrystals"] = "itemPoolEfficiencyCrystals",
-    ["sanityNumChallenges"] = "sanityNumChallenges",
-    ["sanityNumChallengesTier4"] = "sanityNumChallengesTier4",
+    ["itemPoolCorruptionShardNum"] = "itemPoolCorruptionShardNum",
+    ["itemPoolEfficiencyCorruptionShards"] = "itemPoolEfficiencyCorruptionShards",
+    ["itemPoolTotalSkillNum"] = "itemPoolTotalSkillNum",
 }

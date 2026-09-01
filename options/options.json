@@ -1,14 +1,5 @@
 [
     {
-        "name": "Item Pool Efficiency: Crystals",
-        "type": "consumable",
-        "img": "images/items/crystals.png",
-        "codes": "itemPoolEfficiencyCrystals",
-        "max_quantity": 4,
-        "min_quantity": 1,
-        "initial_quantity": 2
-    },
-    {
         "name": "Sanity: Number of Challenge Locations",
         "type": "consumable",
         "img": "images/items/challenges.png",
@@ -19,10 +10,35 @@
     {
         "name": "Sanity: Maximum Number of Tier 4 Challenge Locations",
         "type": "consumable",
-        "img": "images/items/challenges.png",
+        "img": "images/items/challenges_tier_4.png",
         "codes": "sanityNumChallengesTier4",
         "max_quantity": 5,
         "initial_quantity": 1
+    },
+    {
+        "name": "Sanity: Recycling Set Sanity Enabled",
+        "type": "toggle",
+        "img": "images/items/item_recycling.png",
+        "codes": "sanityRecyclingSet",
+        "initial_active_state": true
+    },
+    {
+        "name": "Sanity: Trigger Max Combo",
+        "type": "consumable",
+        "img": "images/items/trigger_combo_max.png",
+        "codes": "sanityNumTriggerCombo",
+        "min_quantity": 0,
+        "max_quantity": 150,
+        "initial_quantity": 100
+    },
+    {
+        "name": "Sanity: Trigger Combo Increments",
+        "type": "consumable",
+        "img": "images/items/trigger_combo_increments.png",
+        "codes": "sanityTriggerComboIncrements",
+        "min_quantity": 1,
+        "max_quantity": 150,
+        "initial_quantity": 10
     },
     {
         "name": "Item Pool: Total Number of Skills",
@@ -37,9 +53,34 @@
         "name": "Item Pool: Minimum amount of Crystals included",
         "type": "consumable",
         "img": "images/items/crystals.png",
-        "codes": "itemPoolProgressiveCrystalsNum",
+        "codes": "itemPoolCrystalNum",
         "max_quantity": 50,
         "min_quantity": 20,
         "initial_quantity": 35
+    },{
+        "name": "Item Pool Efficiency: Crystals",
+        "type": "consumable",
+        "img": "images/items/crystal_efficiency.png",
+        "codes": "itemPoolEfficiencyCrystals",
+        "max_quantity": 4,
+        "min_quantity": 1,
+        "initial_quantity": 2
+    },
+    {
+        "name": "Item Pool: Minimum amount of Corruption Shards included",
+        "type": "consumable",
+        "img": "images/items/corruption_shards.png",
+        "codes": "itemPoolCorruptionShardNum",
+        "max_quantity": 20,
+        "min_quantity": 0,
+        "initial_quantity": 10
+    },{
+        "name": "Item Pool Efficiency: Corruption Shards",
+        "type": "consumable",
+        "img": "images/items/corruption_shard_efficiency.png",
+        "codes": "itemPoolEfficiencyCorruptionShards",
+        "max_quantity": 4,
+        "min_quantity": 1,
+        "initial_quantity": 1
     }
 ]

@@ -6,46 +6,32 @@
             {
                 "type": "group",
                 "dock": "top",
-                "header": "These options will be automatically updated after connecting to AP",
+                "header": "Settings",
                 "content": [
                     {
-                        "type": "array",
+                        "type": "itemgrid",
                         "orientation": "horizontal",
-                        "content": [
-                            {
-                                "type": "item",
-                                "item": "itemPoolEfficiencyCrystals"
-                            },
-                            {
-                                "type": "item",
-                                "item": "sanityNumChallenges"
-                            },
-                            {
-                                "type": "item",
-                                "item": "sanityNumChallengesTier4"
-                            }
+                        "margin": 0,
+                        "item_margin": 0,
+                        "item_size": 192,
+                        "rows": [
+                            [
+                                "itemPoolCrystalNum", 
+                                "itemPoolCorruptionShardNum",
+                                "itemPoolTotalSkillNum",
+                                "sanityNumChallenges",
+                                "sanityNumTriggerCombo"
+                            ],
+                            [
+                                "itemPoolEfficiencyCrystals", 
+                                "itemPoolEfficiencyCorruptionShards", 
+                                "sanityRecyclingSet",
+                                "sanityNumChallengesTier4",
+                                "sanityTriggerComboIncrements"
+                            ]
                         ]
                     }
                 ]
-            },
-            {
-                "type": "group",
-                "dock": "top",
-                "header": "These options currently do not support autotracking, please adjust them manually!",
-                "content": [{
-                    "type": "array",
-                    "orientation": "horizontal",
-
-                    "content": [{
-                        "type": "item",
-                        "item": "itemPoolTotalSkillNum"
-                    },
-                    {
-                        "type": "item",
-                        "item": "itemPoolProgressiveCrystalsNum",
-                        "max_width": 192
-                    }]
-                }]
             }
         ]
     }
