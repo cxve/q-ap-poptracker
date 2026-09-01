@@ -1,7 +1,7 @@
 html {
     color: white;
     background: #222;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial Black, Helvetica, sans-serif;
 }
 
 .window {
@@ -22,7 +22,7 @@ html {
 }
 
 .window>div {
-    padding: 8px 32px 32px;
+    padding: 7px 32px 32px;
     flex-direction: column;
 }
 
@@ -69,6 +69,9 @@ th,
 }
 
 #ranks td:first-child {
+    min-width: 149px;
+    max-width: 149px;
+    font-size: 23px;
     padding: 0 14px 0 12px;
 }
 
@@ -181,10 +184,17 @@ td>div {
 
 /* SANITY */
 
-#challenges tr:first-child th {
+#challenges th[colspan], .sanity th[colspan] {
     padding: 0 10px;
     letter-spacing: -2px;
     height: 44px;
+}
+
+.sanity th[colspan] {
+    font-size: 16px;
+    letter-spacing: -1px;
+    transform: none;
+    width: 162px;
 }
 
 #challenges th {
@@ -200,7 +210,7 @@ td>div {
 }
 
 .features td {
-    font-size: large;
+    font-size: 16px;
     font-weight: 900;
     letter-spacing: -2px;
     transform: none;
@@ -242,7 +252,8 @@ td>div {
     align-items: center;
 }
 
-.features .content::before {
+.features .content::before, .sanity th[colspan]::before {
+    visibility: hidden;
     content: "X";
     margin-right: 8px;
 }
@@ -288,7 +299,7 @@ td>div {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial Black, Helvetica, sans-serif;
     font-size: x-large;
     font-weight: 900;
 }
@@ -300,6 +311,13 @@ td>div {
 .skills {
     background: #74766a;
     border-radius: 100%;
+}
+
+.skill_trigger {
+    border-color: #5d5e55;
+    border-radius: 100%;
+    border-style: dashed;
+    border-width: 4px;
 }
 
 .items .crystal {
