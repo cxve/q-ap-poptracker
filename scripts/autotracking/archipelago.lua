@@ -109,6 +109,51 @@ function apply_slot_data(slot_data)
 	end
 end
 
+-- some options are inferred
+function infer_slot_data()
+	local location_store = {}
+	if ENABLE_DEBUG_LOG then
+        print("Rebuilding location store...")
+    end
+    for _, v in ipairs(Archipelago.MissingLocations) do
+        print(v)
+        location_store[v] = true
+    end
+    print(Archipelago.CheckedLocations)
+    for _, v in ipairs(Archipelago.CheckedLocations) do
+        location_store[v] = true
+    end
+
+	local sanityNumChallenges = 0
+	local sanityNumChallengesTier4 = 0
+
+	for t=0,3,1 do
+		for i=0,9,1 do
+			if location_store[BASE_ID + 300 + t * 10 + i] == true then
+	             sanityNumChallenges = sanityNumChallenges + 1
+				 if t == 3 then sanityNumChallengesTier4 = sanityNumChallengesTier4 + 1 end
+	        end
+		end
+	end
+
+	Tracker:FindObjectForCode("sanityNumChallenges").AcquiredCount = sanityNumChallenges
+	Tracker:FindObjectForCode("sanityNumChallengesTier4").AcquiredCount = sanityNumChallengesTier4
+
+	if location_store[BASE_ID + 400] == true then
+		Tracker:FindObjectForCode("sanityRecyclingSet").ActiveState = true
+	end
+
+	local first = true
+	local last = 0
+	for i=0,149,1 do
+		if location_store[BASE_ID + 1000 + i] == true then
+			if first == true then Tracker:FindObjectForCode("sanityTriggerComboIncrements").AcquiredCount = i + 1 end
+			last = i + 1
+		end
+	end
+	Tracker:FindObjectForCode("sanityTriggerComboMax").AcquiredCount = last
+end
+
 -- called right after an AP slot is connected
 function onClear(slot_data)
 	-- use bulk update to pause logic updates until we are done resetting all items/locations
@@ -166,6 +211,7 @@ function onClear(slot_data)
 		end
 	end
 	apply_slot_data(slot_data)
+	infer_slot_data()
 	LOCAL_ITEMS = {}
 	GLOBAL_ITEMS = {}
 	-- manually run snes interface functions after onClear in case we need to update them (i.e. because they need slot_data)
