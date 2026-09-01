@@ -79,3 +79,24 @@ for t=1,4,1 do
 		LOCATION_MAPPING[BASE_LOCATION_ID + 299 + 10 * (t - 1) + i] = { { "@Sanity: Challenges/Tier " .. t .. "/Challenge " .. i } }
 	end
 end
+
+local recycling_sets = {
+	"Double Triple Set", 
+	"Six of a Kind Set", 
+	"Typical Set", 
+	"Two by Four Set", 
+	"Four of a Kind Set", 
+	"PVP Set", 
+	"Three Pairs Set", 
+	"Timeline Saturated Set", 
+	"Three of a Kind Set", 
+	"Two Pairs Set"
+}
+
+for i, v in ipairs(recycling_sets) do
+	LOCATION_MAPPING[BASE_LOCATION_ID + 400 + i] = { { "@Sanity: Recycling/Vanilla Sets/" .. v } }
+end
+
+for i=1,150,1 do
+	LOCATION_MAPPING[BASE_LOCATION_ID + 1000 + i - 1] = { { "@Sanity: Trigger/Combo/" .. i } }
+end
