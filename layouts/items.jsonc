@@ -23,6 +23,11 @@
                 "progressive_challenges",
                 "progressive_challenge_slot",
                 "progressive_qblock_breaker"
+              ],
+              [
+                "corruption_shards",
+                "honor_duels",
+                "progressive_item_recycling_system"
               ]
             ]
           }
@@ -46,9 +51,9 @@
             "margin": "0, 0",
             "rows": [
               [
-                "progressive_item_recycling_system",
                 "progressive_item_slot",
-                "progressive_shard_slot_capacity"
+                "progressive_shard_slot_capacity",
+                "hypernode"
               ],
               [
                 "progressive_wallet_size",
@@ -57,8 +62,7 @@
               ],
               [
                 "upgrade_points",
-                "hypernode",
-                "honor_duels"
+                "progressive_shop_slot"
               ]
             ]
           }
@@ -83,14 +87,12 @@
             "margin": "0, 0",
             "rows": [
               [
-                "corruption_shards",
-                "progressive_shop_slot",
-                "trickle_down"
+                "knowledge_transfer",
+                "progressive_stats",
+                "loadouts"
               ],
               [
-                "progressive_stats",
-                "loadouts",
-                "knowledge_transfer"
+                "trickle_down"
               ]
             ]
           }
@@ -112,10 +114,12 @@
           {
             "type": "layout",
             "key": "item_progression"
-          },{
+          },
+          {
             "type": "layout",
             "key": "item_useful"
-          },{
+          },
+          {
             "type": "layout",
             "key": "item_filler"
           }
@@ -137,10 +141,12 @@
           {
             "type": "layout",
             "key": "item_progression"
-          },{
+          },
+          {
             "type": "layout",
             "key": "item_useful"
-          },{
+          },
+          {
             "type": "layout",
             "key": "item_filler"
           }
