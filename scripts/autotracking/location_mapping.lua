@@ -94,7 +94,7 @@ local recycling_sets = {
 }
 
 for i, v in ipairs(recycling_sets) do
-	LOCATION_MAPPING[BASE_LOCATION_ID + 400 + i] = { { "@Sanity: Recycling/Vanilla Sets/" .. v } }
+	LOCATION_MAPPING[BASE_LOCATION_ID + 400 + i - 1] = { { "@Sanity: Recycling/Vanilla Sets/" .. v } }
 end
 
 for i=1,150,1 do
