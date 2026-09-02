@@ -93,7 +93,7 @@
       {
         "name": "MORE_BETTERED_CHALLENGES",
         "access_rules": [
-          "^$has_corruption_shards|17,$has_crystals|7"
+          "^$has_corruption_shards|17,^$has_difficulty_requirements_rank|35"
         ],
         "sections": [{}],
         "map_locations": [
@@ -130,7 +130,7 @@
       },
       {
         "name": "SHOP_LOCK",
-        "access_rules": ["^$has_crystals|280"],
+        "access_rules": ["^$has_crystals|280,^$has_difficulty_requirements_rank|5"],
         "sections": [{}],
         "map_locations": [
           {
@@ -416,7 +416,7 @@
       },
       {
         "name": "LOADOUTS",
-        "access_rules": ["^$has_crystals|60"],
+        "access_rules": ["^$has_crystals|60,^$has_difficulty_requirements_rank|20"],
         "sections": [{}],
         "map_locations": [
           {
