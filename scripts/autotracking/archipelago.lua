@@ -111,6 +111,7 @@ end
 
 -- some options are inferred
 function infer_slot_data()
+local BASE_ID = 1000000
 	local location_store = {}
 	if ENABLE_DEBUG_LOG then
         print("Rebuilding location store...")
@@ -119,7 +120,6 @@ function infer_slot_data()
         print(v)
         location_store[v] = true
     end
-    print(Archipelago.CheckedLocations)
     for _, v in ipairs(Archipelago.CheckedLocations) do
         location_store[v] = true
     end
@@ -147,7 +147,10 @@ function infer_slot_data()
 	local last = 0
 	for i=0,149,1 do
 		if location_store[BASE_ID + 1000 + i] == true then
-			if first == true then Tracker:FindObjectForCode("sanityTriggerComboIncrements").AcquiredCount = i + 1 end
+			if first == true then 
+				first = false
+				Tracker:FindObjectForCode("sanityTriggerComboIncrements").AcquiredCount = i + 1
+				end
 			last = i + 1
 		end
 	end

@@ -146,7 +146,24 @@ end
 
 function is_combo_enabled(num)
     local n = tonumber(num)
-    if n > Tracker:ProviderCountForCode("sanityNumTriggerCombo") then return false end
+    if n > Tracker:ProviderCountForCode("sanityTriggerComboMax") then return false end
+    if n == Tracker:ProviderCountForCode("sanityTriggerComboMax") then return true end
     if n % Tracker:ProviderCountForCode("sanityTriggerComboIncrements") == 0 then return true end
     return false
+end
+
+function has_combo_req(num)
+    local n = tonumber(num)
+    local numSkillsTotal = Tracker:ProviderCountForCode('itemPoolTotalSkillNum')
+    local numSkills = Tracker:ProviderCountForCode("skill")
+    if numSkills >= numSkillsTotal then return acc_yes end
+    function calc_trigger_num(_numSkills)
+        local numSkillsHalf = math.ceil(_numSkills / 2)
+        local numTrigger = math.floor(_numSkills * 10 / 35)
+        local numTriggerPossible = math.floor(1.4 ^ numTrigger * 6) - 6
+        return numSkillsHalf + numTriggerPossible
+    end
+    if calc_trigger_num(numSkills) >= n then return acc_yes end
+    if calc_trigger_num(numSkills + 5) >= n then return acc_maybe end
+    return acc_no
 end

@@ -26,7 +26,7 @@
         "name": "Sanity: Trigger Max Combo",
         "type": "consumable",
         "img": "images/items/trigger_combo_max.png",
-        "codes": "sanityNumTriggerCombo",
+        "codes": "sanityTriggerComboMax",
         "min_quantity": 0,
         "max_quantity": 150,
         "initial_quantity": 100

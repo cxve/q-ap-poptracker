@@ -20,7 +20,7 @@
                                 "itemPoolCorruptionShardNum",
                                 "itemPoolTotalSkillNum",
                                 "sanityNumChallenges",
-                                "sanityNumTriggerCombo"
+                                "sanityTriggerComboMax"
                             ],
                             [
                                 "itemPoolEfficiencyCrystals", 
