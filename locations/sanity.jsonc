@@ -109,7 +109,7 @@
                     { "name": "Six of a Kind Set" },
                     { "name": "Typical Set" },
                     { "name": "Timeline Saturated Set" },
-                    { "name": "PVP Set" }
+                    { "name": "PVP Set", "access_rules": "honor_duels" }
                 ],
                 "map_locations": [
                     {
