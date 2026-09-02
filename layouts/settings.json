@@ -10,7 +10,6 @@
                 "content": [
                     {
                         "type": "itemgrid",
-                        "orientation": "horizontal",
                         "margin": 0,
                         "item_margin": 0,
                         "item_size": 192,
